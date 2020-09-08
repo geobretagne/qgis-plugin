@@ -1,0 +1,474 @@
+{
+  "title": "GéoBretagne",
+  "description": "",
+  "type": "folder",
+  "children": [{
+      "title": "Fonds raster",
+      "description": "Fonds cartographiques raster",
+      "type": "folder",
+      "children": [{
+          "title": "Scan IGN",
+          "description": "Scans de l'IGN (affichage du scan selon l'échelle)",
+          "type": "wms_layer",
+          "metadata_url": "http://www.ign.fr/",
+          "params": {
+            "url": "https://tile.geobretagne.fr/gwc02/service/wms?tiled=true",
+            "name": "carte",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "Orthophoto",
+          "description": "Orthophoto",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://tile.geobretagne.fr/gwc02/service/wms?tiled=true",
+            "name": "satellite",
+            "format": "image/jpeg",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "Orthophoto infrarouge",
+          "description": "Orthophoto infrarouge",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/434b82a8-8d3c-4d9f-9eb3-0485f1a63eb6",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://tile.geobretagne.fr/gwc02/service/wms?tiled=true",
+            "name": "satellite-ir",
+            "format": "image/jpeg",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "Orthophoto ancienne",
+          "description": "Orthophoto des années 50",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/048622c5-b333-4c2b-94ec-40a41608dc06",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://tile.geobretagne.fr/gwc02/service/wms?tiled=true",
+            "name": "satellite-ancien",
+            "format": "image/jpeg",
+            "srs": "EPSG:2154"
+          }
+        }
+		]
+	},
+	{
+	  "title": "Fonds OpenStreetMap",
+      "description": "Fonds OpenStreetMap",
+      "type": "folder",
+      "children":[{
+      "title": "OpenStreetMap - style Google",
+      "description": "Fond de plan OpenStreetMap élaboré par GéoBretagne - style Google",
+	  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6d5e8af2-070e-45ab-96c0-fe7938a5d853",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.geobretagne.fr/gwc01/service/wms?tiled=true",
+            "name": "osm:google",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "OpenStreetMap - style default",
+          "description": "Fond de plan OpenStreetMap élaboré par GéoBretagne - style Default",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b9db6b2-8dec-4aa2-abef-8f627267cc64",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.geobretagne.fr/gwc01/service/wms?tiled=true",
+            "name": "osm:map",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "OpenStreetMap - style bing",
+          "description": "Fond de plan OpenStreetMap élaboré par GéoBretagne - style Bing",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/cd931771-fb8f-46d8-bd73-8f7fbbd356d8",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.geobretagne.fr/gwc01/service/wms?tiled=true",
+            "name": "osm:bing",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        }
+
+      ]
+    },
+    {
+      "title": "Alimétrie",
+      "description": "Données concernant l'altimétrie",
+      "type": "folder",
+      "children": [{
+          "title": "MNT 20m sans ouvrages",
+          "description": "Modèle Numérique de Terrain (MNT) précision 20m sans ouvrages",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9ce21e50-febf-4eac-8c51-a07be58d2f94",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt20so",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "MNT 20m avec ouvrages",
+          "description": "Modèle Numérique de Terrain (MNT) précision 20m avec ouvrages",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9bdc8e9a-59fc-42ea-a91f-a98ced95e273",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt20ao",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "MNT 5m sans ouvrages",
+          "description": "Modèle Numérique de Terrain (MNT) précision 5m avec ouvrages",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/4ac04028-fb34-475d-96f8-b1218b396c38",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt5so",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "MNT 5m avec ouvrages",
+          "description": "Modèle Numérique de Terrain (MNT) précision 5m avec ouvrages",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b0bb2067-157f-477d-951d-09b1fa0e98ef",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt5ao",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "MNT carte des pentes",
+          "description": "Modèle Numérique de Terrain (MNT) précision 5m avec ouvrages",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/2e2709c3-b285-4e54-a688-dfa9f9a43553",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt5so-slope",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "MNT carte ombrage",
+          "description": "Modèle Numérique de Terrain ombré Bretagne Megalis pas 5m",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ab63233d-38f2-4f2e-8c45-5c4357d63c4b",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "mnt5so-shade",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "Courbes de niveaux",
+          "description": "Modèle Numérique de Terrain Bretagne Megalis pas 5m : carte des pentes",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b25d9b2c-369d-49b3-8e61-7ea47b89dbda",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/alti/wms",
+            "format": "image/png",
+            "name": "courbes-20m-10m-aoa",
+            "srs": "epsg:2154"
+          }
+        }
+	  ]
+	},
+    {
+      "title": "Cadastre",
+      "description": "Données concernant le cadastre",
+      "type": "folder",
+      "children": [{
+          "title": "Cadastre complet",
+          "description": "Cadastre isssu du site cadastre.gouv.fr",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/8728b29d-267e-4d31-bad7-de528ba9c899",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://kartenn.region-bretagne.fr:443/ws/cadastre/france.wms",
+            "format": "image/png",
+            "name": "AMORCES_CAD,LIEUDIT,CP.CadastralParcel,SUBFISCAL,CLOTURE,DETAIL_TOPO,HYDRO,VOIE_COMMUNICATION,BU.Building,BORNE_REPERE",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "Parcelles",
+          "description": "Parcelles (cadastre DGFip)",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/4977b285-158f-4990-bc24-92fe25b83901",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/cadastre/wms",
+            "format": "image/png",
+            "name": "CP.CadastralParcel",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "Sections",
+          "description": "Sections (cadastre DGFip)",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/63c700b1-943d-4409-88f0-2bdf904208bd",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/cadastre/wms",
+            "format": "image/png",
+            "name": "CP.CadastralZoning",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "title": "Bâti",
+          "description": "Bâti (cadastre DGFip)",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/91811bc9-308a-4ddb-9c15-c69b3c0bb067",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/cadastre/wms",
+            "format": "image/png",
+            "name": "CP.CadastralBuilding",
+            "srs": "EPSG:2154",
+			"style": "cadastre:cadastre_bati_type"
+          }
+        }
+	  ]
+	},
+    {
+      "title": "Limites administratives",
+      "description": "Données concernant les limites administratives",
+      "type": "folder",
+      "children": [{
+          "title": "Régions",
+          "description": "Limites des régions basées sur la BD Admin Express de l'IGN",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=8b9bc237-0195-46f7-b92e-d923257e4b05",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/geor_loc/wfs",
+            "version": "2.0.0",
+            "name": "geor_loc:REGION",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Departements",
+          "description": "Limites des départements basées sur la BD Admin Express de l'IGN",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/ign/wfs",
+            "version": "2.0.0",
+            "name": "ign:departement_metro",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "EPCI",
+          "description": "Limites des EPCI à fiscalité propre basées sur la BD Admin Express de l'IGN",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "version": "2.0.0",
+            "name": "dreal_b:EPCI_053",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "title": "Communes",
+          "description": "Limites des communes basées sur la BD Admin Express de l'IGN",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/ign/wfs",
+            "version": "2.0.0",
+            "name": "ign:commune_metro",
+            "srs": "epsg:2154",
+			"filter": "insee_reg = '53'"
+          }
+        },
+		{
+          "title": "Périmètre des SCOT",
+          "description": "Schémas de Cohérence Territoriaux de Bretagne",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/91117783-14f0-409c-961e-9d2645f248ea",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "version": "2.0.0",
+            "name": "dreal_b:n_scot",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Périmètre des Pays et PETR",
+          "description": "Données des Pays et PETR de Bretagne",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "version": "2.0.0",
+            "name": "dreal_b:n_pays",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Périmètre des SCOT",
+          "description": "Données des Schémas de COhérence Territoriale de Bretagne",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/91117783-14f0-409c-961e-9d2645f248ea",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "version": "2.0.0",
+            "name": "dreal_b:n_scot",
+            "srs": "epsg:2154"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Environnement",
+      "description": "Données concernant la thématique environnement",
+      "type": "folder",
+      "children": [{
+          "title": "Eau",
+          "description": "Données concernant la thématique eau",
+          "type": "folder",
+          "children": [{
+			  "title": "SAGE",
+			  "description": "Schémas d'aménagement et de gestion des eaux (SAGE) en Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/e718b2fe-f3d0-4c56-a0c0-bf61d31a857b",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "dreal_b:sage_dreal",
+				"srs": "epsg:2154"
+			  }
+			}
+		]
+		},
+		{
+          "title": "Espaces protégés",
+          "description": "Données concernant la thématique des espaces protégés",
+          "type": "folder",
+          "children": [{
+			  "title": "Parcs naturels régionaux",
+			  "description": "Parcs naturels régionaux actifs et en projet de Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9df1d4b7-221c-4424-af3f-50a898e3d333",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+				"version": "2.0.0",
+				"name": "rb:parc_naturel_regional",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Réserves naturelles régionales",
+			  "description": " Réserves naturelles régionales de Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+				"version": "2.0.0",
+				"name": "rb:reserve_naturelle_regionale",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Espaces Naturels Sensibles en Côtes d'Armor",
+			  "description": " Sites ENS - Espaces Naturels Sensibles en Côtes d'Armor",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a2e41fd6-e22c-4d6a-a178-9fa2c5abc346",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/cd22/wfs",
+				"version": "2.0.0",
+				"name": "cd22:site_espace_naturel_sensible_poly_22",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Espaces Naturels Sensibles en Finistère",
+			  "description": " Sites ENS - Espaces Naturels Sensibles en Finistère",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/94591e3f-82b8-46c6-a15b-60b88f977d89",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/cd29/wfs",
+				"version": "2.0.0",
+				"name": "cd29:espace_naturel_protege_propriete_29",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Espaces Naturels Sensibles en Ille-et-Vilaine",
+			  "description": " Sites ENS - Espaces Naturels Sensibles en Ille-et-Vilaine",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/93361902-63ba-4bd4-8bdb-27b4c813bf69",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/cd35/wfs",
+				"version": "2.0.0",
+				"name": "cd35:site_espace_naturel_protege_poly_35",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Espaces Naturels Sensibles en Morbihan",
+			  "description": " Sites ENS - Espaces Naturels Sensibles en Morbihan",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/d61e6d3c-2b16-4019-a7d1-e9b3163aeb1d",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/cd56/wfs",
+				"version": "2.0.0",
+				"name": "cd56:site_espace_naturel_protege_poly_56",
+				"srs": "epsg:2154"
+			  }
+			}
+			]
+		}
+      ]
+    },
+    {
+      "title": "Transport",
+      "description": "Données concernant la thématique transport",
+      "type": "folder",
+      "children": [{
+          "title": "Gare ferroviaire",
+          "description": "Gares ferroviaires Bretagne Pays de Loire",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/232517e0-5b48-11de-b5dc-0000c0a8230c",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/sncf/wfs",
+            "version": "2.0.0",
+            "name": "sncf:gare_ferroviaire",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Ligne ferroviaire",
+          "description": "Lignes ferroviaires Bretagne Pays de Loire",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b8927600-5b49-11de-b5dc-0000c0a8230c",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/sncf/wfs",
+            "version": "2.0.0",
+            "name": "sncf:ligne_ferroviaire",
+            "srs": "epsg:2154"
+          }
+        }
+
+      ]
+    }
+
+	
+  ]
+}

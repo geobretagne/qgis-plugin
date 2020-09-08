@@ -2,7 +2,7 @@
 
 import sys
 import os
-from geograndest.utils.singleton import Singleton
+from geobretagne.utils.singleton import Singleton
 from qgis.PyQt.QtCore import QSettings
 
 
@@ -16,9 +16,9 @@ class PluginGlobals:
 
     # Plugin infos
     # PLUGIN_TAG = u"GéoGrandEst"
-    PLUGIN_TAG = u"geograndest"
+    PLUGIN_TAG = u"geobretagne"
     PLUGIN_VERSION = u"0.9.1"
-    PLUGIN_SOURCE_REPOSITORY = u"https://github.com/geograndest/qgis-plugin"
+    PLUGIN_SOURCE_REPOSITORY = u"https://github.com/geobretagne/qgis-plugin"
 
     # Tree nodes types
     NODE_TYPE_FOLDER = "folder"
@@ -35,7 +35,7 @@ class PluginGlobals:
 
     # Images dir
     IMAGES_DIR_NAME = "images"
-    LOGO_FILE_NAME = "geograndest.png"
+    LOGO_FILE_NAME = "geobretagne.png"
 
     ICON_WARN_FILE_NAME = "Icon_Simple_Warn.png"
     ICON_WMS_LAYER_FILE_NAME = "mIconWms.svg"
@@ -47,7 +47,7 @@ class PluginGlobals:
     CONFIG_FILES_DOWNLOAD_AT_STARTUP = True
     CONFIG_DIR_NAME = "config"
     CONFIG_FILE_NAMES = ["config.json"]
-    CONFIG_FILE_URLS = ["https://github.com/geograndest/qgis-plugin/blob/master/geograndest/config/config.json"]
+    CONFIG_FILE_URLS = ["https://github.com/geobretagne/qgis-plugin/blob/master/geobretagne/config/config.json"]
 
     # Hide resources with status = warn
     HIDE_RESOURCES_WITH_WARN_STATUS = True
@@ -129,7 +129,7 @@ class PluginGlobals:
         s.setValue(u"{0}/config_files_download_at_startup".format(self.PLUGIN_TAG), u"1")#0
         s.setValue(u"{0}/config_file_names".format(self.PLUGIN_TAG), ["config.json"])
         s.setValue(u"{0}/config_file_urls".format(self.PLUGIN_TAG),
-                   ["https://github.com/geograndest/qgis-plugin/blob/master/geograndest/config/config.json"])
+                   ["https://github.com/geobretagne/qgis-plugin/blob/master/geobretagne/config/config.json"])
 
     def get_qgis_setting_default_value(self, setting):
         """

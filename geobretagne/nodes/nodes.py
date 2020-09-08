@@ -2,8 +2,8 @@
 
 import os
 
-from geograndest.utils.plugin_globals import PluginGlobals
-from geograndest.utils.plugin_icons import PluginIcons
+from geobretagne.utils.plugin_globals import PluginGlobals
+from geobretagne.utils.plugin_icons import PluginIcons
 
 
 class FavoritesTreeNode:

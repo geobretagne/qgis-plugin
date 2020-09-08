@@ -3,7 +3,7 @@
 from qgis.PyQt.QtWidgets import QWidget, QDialog, QVBoxLayout, QLabel, QTextEdit, QFrame
 from qgis.PyQt.QtGui import QPixmap
 
-from geograndest.utils.plugin_globals import PluginGlobals
+from geobretagne.utils.plugin_globals import PluginGlobals
 
 
 class AboutBox(QDialog):
@@ -23,9 +23,9 @@ class AboutBox(QDialog):
         mainLayout.addWidget(self.logo)
 
 
-        title = u"À propos de l'extension GéoGrandEst…"
+        title = u"À propos de l'extension GéoBretagne…"
         description = u"""Extension pour QGIS donnant un accès simplifié aux ressources géographiques utiles aux 
-partenaires de GéoGrandEst
+partenaires de GéoBretagne
 Version {0}
 Plus d'informations à l'adresse suivante :
 {1}

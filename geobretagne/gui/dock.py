@@ -3,7 +3,7 @@
 from qgis.PyQt.QtCore import Qt
 from qgis.PyQt.QtWidgets import QWidget, QDockWidget, QVBoxLayout
 
-from geograndest.gui.tree_widget import TreeWidget
+from geobretagne.gui.tree_widget import TreeWidget
 
 
 class DockWidget(QDockWidget):
@@ -21,7 +21,7 @@ class DockWidget(QDockWidget):
     def init_gui(self):
         """
         """
-        self.setWindowTitle(u'GéoGrandEst')
+        self.setWindowTitle(u'GéoBretagne')
         self.setAllowedAreas(Qt.LeftDockWidgetArea | Qt.RightDockWidgetArea)
 
         self.treeWidget = TreeWidget()

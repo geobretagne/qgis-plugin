@@ -4,8 +4,8 @@ from qgis.PyQt.QtWidgets import QTreeWidget, QAbstractItemView
 from qgis.PyQt.QtCore import Qt, QByteArray, QDataStream, QIODevice
 from qgis.core import Qgis, QgsMessageLog
 
-from geograndest.gui.tree_items import TreeWidgetItem
-from geograndest.utils.plugin_globals import PluginGlobals
+from geobretagne.gui.tree_items import TreeWidgetItem
+from geobretagne.utils.plugin_globals import PluginGlobals
 
 
 class TreeWidget(QTreeWidget):
