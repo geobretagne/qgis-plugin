@@ -53,6 +53,168 @@
             "format": "image/jpeg",
             "srs": "EPSG:2154"
           }
+		},
+		{
+		  "title": "Orthos départementales historiques",
+          "description": "Données concernant les orthos départementales historiques",
+          "type": "folder",
+          "children": [{
+			  "title": "Côtes d'Armor 2012",
+			  "description": "Ortho Côtes d'Armor 2012",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=45c50cd3-cc66-4f5f-a624-3cafc4d10f60",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-22-2012",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Côtes d'Armor 2015",
+			  "description": "Ortho Côtes d'Armor 2015",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=c2d7c49d-677e-4d3b-86a8-dfb4476a3dfd",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-22-2015",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Côtes d'Armor 2018",
+			  "description": "Ortho Côtes d'Armor 2018",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/724fee9e-91d7-4828-9e79-2b3c03557145",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-22-2018",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Finistère 2012",
+			  "description": "Ortho Finistère 2012",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=728cb2e8-d970-4f37-bb5f-0407b71b16a9",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-29-2012",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Finistère 2015",
+			  "description": "Ortho Finistère 2015",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=3fc45035-731d-482e-a982-9dc3d53f5686",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-29-2015",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Finistère 2018",
+			  "description": "Ortho Finistère 2018",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/255ebc48-e56c-482b-bf15-1579aa2fe729",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-29-2018",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Ille-Et-Vilaine 2011-2012",
+			  "description": "Ortho Ille-Et-Vilaine 2011-2012",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=a409f183-704a-465c-ac6f-ee695c0ef989",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-35-2012",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Ille-Et-Vilaine 2014",
+			  "description": "Ortho Ille-Et-Vilaine 2014",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=3b7117f6-6587-4d4c-9367-e837242f84ad",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-35-2014",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Ille-Et-Vilaine 2017",
+			  "description": "Ortho Ille-Et-Vilaine 2017",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/d38b25d0-6a77-4279-a474-10fde9790f01",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-35-2017",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Morbihan 2010",
+			  "description": "Ortho Morbihan 2010",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=9ad85e98-5ead-4cc7-8b83-94ff3e87058a",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-56-2010",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Morbihan 2013",
+			  "description": "Ortho Morbihan 2013",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/36383af9-4bf4-430a-88fd-6170c7244e5e",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-56-2013",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Morbihan 2016",
+			  "description": "Ortho Morbihan 2016",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6d66bebe-42e6-41c1-97db-6dd52dca9522",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-56-2016",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			}
+		  ]
         }
 		]
 	},
@@ -336,10 +498,89 @@
       ]
     },
     {
+      "title": "Occupation du sol",
+      "description": "Données concernant l'occupation et l'usage des sols",
+      "type": "folder",
+      "children": [{
+          "title": "OCS Morbihan 2013",
+          "description": "OCS Morbihan 2013",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://ows.region-bretagne.fr/geoserver/rb/wms",
+            "format": "image/png",
+            "name": "ocs56_2013",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Corine Land Cover 1990",
+          "description": "Occupation biophysique des sols CLC 1990",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+          "params": {
+            "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+            "name": "LANDCOVER.CLC90_FR",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Corine Land Cover 2000",
+          "description": "Occupation biophysique des sols CLC 2000 révisée",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+          "params": {
+            "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+            "name": "LANDCOVER.CLC00_FR",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Corine Land Cover 2006",
+          "description": "Occupation biophysique des sols CLC 2006 révisée",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+          "params": {
+            "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+            "name": "LANDCOVER.CLC06R_FR",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Corine Land Cover 2012",
+          "description": "Occupation biophysique des sols CLC 2012",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+          "params": {
+            "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+            "name": "LANDCOVER.CLC12_FR",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Corine Land Cover 2018",
+          "description": "Occupation biophysique des sols CLC 2018",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+          "params": {
+            "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+            "name": "LANDCOVER.CLC18_FR",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+		}
+	  ]
+	},
+    {
       "title": "Environnement",
       "description": "Données concernant la thématique environnement",
       "type": "folder",
-      "children": [{
+      "children": [
+	  {
           "title": "Eau",
           "description": "Données concernant la thématique eau",
           "type": "folder",
@@ -432,6 +673,66 @@
 				"name": "cd56:site_espace_naturel_protege_poly_56",
 				"srs": "epsg:2154"
 			  }
+			},
+			{
+			  "title": "NATURA 2000 - Directive Habitats en Bretagne (ZSC)",
+			  "description": "NATURA 2000 - Directive Habitats en Bretagne (ZSC)",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/0b4fe074-5827-47c6-b00e-1c74613ba9cf",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "dreal_b:ZSC",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "NATURA 2000 - Directive Oiseaux en Bretagne (ZPS)",
+			  "description": "NATURA 2000 - Directive Oiseaux en Bretagne (ZPS)",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ddd7da8e-8275-40db-ab39-b5a3178ab570",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "dreal_b:ZPS",
+				"srs": "epsg:2154"
+			  }
+			},
+		    {
+			  "title": "ZNIEFF1",
+			  "description": "Zones naturelles d'intérêt écologique floristique et faunistique de type 1",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33665796-fb24-4117-91aa-3265c76d8031",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "dreal_b:znieff1",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "ZNIEFF2",
+			  "description": "Zones naturelles d'intérêt écologique floristique et faunistique de type 2",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ce4d1839-b7a8-4b11-84a6-a3a9f77b1192",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "dreal_b:znieff2",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Zones RAMSAR",
+			  "description": "Zone Humide d'Importance Internationale découlant de la Convention RAMSAR",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f77a81d3-a867-4fd6-a1e2-5e589a6f3edc",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "dreal_b:ZONES_RAMSAR",
+				"srs": "epsg:2154"
+			  }
 			}
 			]
 		}
@@ -468,7 +769,5 @@
 
       ]
     }
-
-	
   ]
 }
