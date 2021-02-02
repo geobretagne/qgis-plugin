@@ -603,26 +603,50 @@
           "description": "Données concernant la thématique des espaces protégés",
           "type": "folder",
           "children": [{
-			  "title": "Parcs naturels régionaux",
-			  "description": "Parcs naturels régionaux actifs et en projet de Bretagne",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9df1d4b7-221c-4424-af3f-50a898e3d333",
+			  "title": "Arrêtés de protection du biotope",
+			  "description": "Arrêtés préfectoraux de protection de biotope en Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/e3e9b712-220b-42e0-8003-4a2392e1b8c7",
 			  "type": "wfs_feature_type",
 			  "params": {
-				"url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
 				"version": "2.0.0",
-				"name": "rb:parc_naturel_regional",
+				"name": "rb:APB_polygones",
 				"srs": "epsg:2154"
 			  }
 			},
 			{
-			  "title": "Réserves naturelles régionales",
-			  "description": " Réserves naturelles régionales de Bretagne",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51",
+			  "title": "Conservatoire du littoral : espaces définitivement protégés",
+			  "description": "Conservatoire du littoral : espaces définitivement protégés",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/c909ccee-775d-4dc5-98de-6771ab85f282",
 			  "type": "wfs_feature_type",
 			  "params": {
-				"url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
 				"version": "2.0.0",
-				"name": "rb:reserve_naturelle_regionale",
+				"name": "rb:espace_definitivement_protege",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Conservatoire du littoral : espaces provisoirement protégés",
+			  "description": "Conservatoire du littoral : espaces provisoirement protégés",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/0509669e-3d3f-4d9d-9a9b-20feb572ded5",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "rb:espace_provisoirement_protege",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Conservatoire du littoral : périmètre d'intervention",
+			  "description": "Conservatoire du littoral : périmètre d'intervention",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5e484c41-933a-48db-825f-04b5f75f35bf",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "rb:perimetre_intervention",
 				"srs": "epsg:2154"
 			  }
 			},
@@ -698,6 +722,78 @@
 				"srs": "epsg:2154"
 			  }
 			},
+			{
+			  "title": "Parcs naturels régionaux",
+			  "description": "Parcs naturels régionaux actifs et en projet de Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9df1d4b7-221c-4424-af3f-50a898e3d333",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+				"version": "2.0.0",
+				"name": "rb:parc_naturel_regional",
+				"srs": "epsg:2154"
+			  }
+			},
+		    {
+			  "title": "Réserve Nationale de Chasse et de Faune Sauvage en Bretagne",
+			  "description": "Réserve Nationale de Chasse et de Faune Sauvage en Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ab992426-dc35-427c-9579-8293ca06a269",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "dreal_b:Reserve_nationale_de_chasse_et_de_faune_sauvage",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Réserves naturelles nationales",
+			  "description": " Réserves naturelles nationales de Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6d184403-6f2e-4643-9e2f-13a6b229dabf",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "rb:reserves_naturelles",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Réserves naturelles régionales",
+			  "description": " Réserves naturelles régionales de Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+				"version": "2.0.0",
+				"name": "rb:reserve_naturelle_regionale",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Sites classés  en Bretagne",
+			  "description": "Sites classés  en Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ed5ad99c-a386-48c2-8f96-decdbb593643",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "dreal_b:sites_classes_region",
+				"srs": "epsg:2154"
+			  }
+			},
+		    {
+			  "title": "Sites inscrits en Bretagne",
+			  "description": "Sites inscrits en Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/31a41ed0-9945-41c1-bd68-df7ae572bba2",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "dreal_b:sites_inscrits_region",
+				"srs": "epsg:2154"
+			  }
+			},
 		    {
 			  "title": "ZNIEFF1",
 			  "description": "Zones naturelles d'intérêt écologique floristique et faunistique de type 1",
@@ -710,6 +806,7 @@
 				"srs": "epsg:2154"
 			  }
 			},
+
 			{
 			  "title": "ZNIEFF2",
 			  "description": "Zones naturelles d'intérêt écologique floristique et faunistique de type 2",
