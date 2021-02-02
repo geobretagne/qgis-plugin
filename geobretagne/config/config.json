@@ -501,7 +501,48 @@
       "title": "Occupation du sol",
       "description": "Données concernant l'occupation et l'usage des sols",
       "type": "folder",
-      "children": [{
+      "children": [
+		{
+          "title": "Artificialisation des sols en Bretagne - Commune",
+          "description": "Artificialisation des sols en Bretagne",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7d5c54a7-fa7b-40e3-9057-0b95a2a4f969",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "version": "2.0.0",
+            "name": "dreal_b:foncier_artificialise",
+            "srs": "epsg:2154",
+			"filter": "millesime = '2018' AND level = 'Commune'"
+          }
+        },
+		{
+          "title": "Artificialisation des sols en Bretagne - EPCI",
+          "description": "Artificialisation des sols en Bretagne",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7d5c54a7-fa7b-40e3-9057-0b95a2a4f969",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "version": "2.0.0",
+            "name": "dreal_b:foncier_artificialise",
+            "srs": "epsg:2154",
+			"filter": "millesime = '2018' AND level = 'EPCI'"
+          }
+        },
+		{
+          "title": "Artificialisation des sols en Bretagne - SCOT",
+          "description": "Artificialisation des sols en Bretagne",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7d5c54a7-fa7b-40e3-9057-0b95a2a4f969",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "version": "2.0.0",
+            "name": "dreal_b:foncier_artificialise",
+            "srs": "epsg:2154",
+			"filter": "millesime = '2018' AND level = 'SCOT'"
+          }
+        },
+
+		{
           "title": "OCS Morbihan 2013",
           "description": "OCS Morbihan 2013",
 		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4",
