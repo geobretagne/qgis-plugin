@@ -213,6 +213,19 @@
 				"format": "image/png",
 				"srs": "epsg:2154"
 			  }
+			},
+			{
+			  "title": "Morbihan 2019",
+			  "description": "Ortho Morbihan 2019",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/83e8ba10-0815-407e-83e6-9993761f086a",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-56-2019",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
 			}
 		  ]
         }
