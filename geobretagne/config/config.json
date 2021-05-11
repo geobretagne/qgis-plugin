@@ -664,7 +664,7 @@
 			  "params": {
 				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
 				"version": "2.0.0",
-				"name": "rb:APB_polygones",
+				"name": "dreal_b:APB_polygones",
 				"srs": "epsg:2154"
 			  }
 			},
@@ -676,7 +676,7 @@
 			  "params": {
 				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
 				"version": "2.0.0",
-				"name": "rb:espace_definitivement_protege",
+				"name": "dreal_b:espace_definitivement_protege",
 				"srs": "epsg:2154"
 			  }
 			},
@@ -688,7 +688,7 @@
 			  "params": {
 				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
 				"version": "2.0.0",
-				"name": "rb:espace_provisoirement_protege",
+				"name": "dreal_b:espace_provisoirement_protege",
 				"srs": "epsg:2154"
 			  }
 			},
@@ -700,7 +700,7 @@
 			  "params": {
 				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
 				"version": "2.0.0",
-				"name": "rb:perimetre_intervention",
+				"name": "dreal_b:perimetre_intervention",
 				"srs": "epsg:2154"
 			  }
 			},
