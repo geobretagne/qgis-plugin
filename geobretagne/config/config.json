@@ -792,13 +792,13 @@
 			  "title": "Réserve Nationale de Chasse et de Faune Sauvage en Bretagne",
 			  "description": "Réserve Nationale de Chasse et de Faune Sauvage en Bretagne",
 			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ab992426-dc35-427c-9579-8293ca06a269",
-			  "type": "wfs_feature_type",
+			  "type": "wms_layer",
 			  "params": {
-				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
-				"version": "2.0.0",
-				"name": "dreal_b:Reserve_nationale_de_chasse_et_de_faune_sauvage",
-				"srs": "epsg:2154"
-			  }
+				"url": "http://ws.carmen.developpement-durable.gouv.fr/WMS/10/Nature_Paysage",
+				"format": "image/png",
+				"name": "Reserve_nationale_de_chasse_et_de_faune_sauvage",
+				"srs": "EPSG:2154"
+				}
 			},
 			{
 			  "title": "Réserves naturelles nationales",
@@ -808,7 +808,7 @@
 			  "params": {
 				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
 				"version": "2.0.0",
-				"name": "rb:reserves_naturelles",
+				"name": "dreal_b:reserves_naturelles",
 				"srs": "epsg:2154"
 			  }
 			},
