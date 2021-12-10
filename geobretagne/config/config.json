@@ -176,6 +176,19 @@
 			  }
 			},
 			{
+			  "title": "Ille-Et-Vilaine 2020",
+			  "description": "Ortho Ille-Et-Vilaine 2020",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/541c6aad-f288-4cc7-bff2-a5c18a7eb286",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-35-2020",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
 			  "title": "Morbihan 2010",
 			  "description": "Ortho Morbihan 2010",
 			  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=9ad85e98-5ead-4cc7-8b83-94ff3e87058a",
@@ -495,18 +508,6 @@
             "name": "dreal_b:n_pays",
             "srs": "epsg:2154"
           }
-        },
-		{
-          "title": "Périmètre des SCOT",
-          "description": "Données des Schémas de COhérence Territoriale de Bretagne",
-		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/91117783-14f0-409c-961e-9d2645f248ea",
-          "type": "wfs_feature_type",
-          "params": {
-            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
-            "version": "2.0.0",
-            "name": "dreal_b:n_scot",
-            "srs": "epsg:2154"
-          }
         }
       ]
     },
@@ -649,6 +650,18 @@
 				"name": "dreal_b:sage_dreal",
 				"srs": "epsg:2154"
 			  }
+			},
+			{
+			  "title": "Bassin versant",
+			  "description": "Bassin versant en Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a06c4da-2e8a-4a3b-b0f9-68ac4d2351ca",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+				"version": "2.0.0",
+				"name": "rb:bassin_versant",
+				"srs": "epsg:2154"
+			  }
 			}
 		]
 		},
@@ -674,21 +687,9 @@
 			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/c909ccee-775d-4dc5-98de-6771ab85f282",
 			  "type": "wfs_feature_type",
 			  "params": {
-				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"url": "https://ws.carmencarto.fr/WFS/119/fxx_inpn?",
 				"version": "2.0.0",
-				"name": "dreal_b:espace_definitivement_protege",
-				"srs": "epsg:2154"
-			  }
-			},
-			{
-			  "title": "Conservatoire du littoral : espaces provisoirement protégés",
-			  "description": "Conservatoire du littoral : espaces provisoirement protégés",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/0509669e-3d3f-4d9d-9a9b-20feb572ded5",
-			  "type": "wfs_feature_type",
-			  "params": {
-				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
-				"version": "2.0.0",
-				"name": "dreal_b:espace_provisoirement_protege",
+				"name": "ms:Terrains_du_Conservatoire_du_Littoral",
 				"srs": "epsg:2154"
 			  }
 			},
@@ -696,11 +697,11 @@
 			  "title": "Conservatoire du littoral : périmètre d'intervention",
 			  "description": "Conservatoire du littoral : périmètre d'intervention",
 			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5e484c41-933a-48db-825f-04b5f75f35bf",
-			  "type": "wfs_feature_type",
+			  "type": "wms_layer",
 			  "params": {
-				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
-				"version": "2.0.0",
-				"name": "dreal_b:perimetre_intervention",
+				"url": "https://wxs.ign.fr/environnement/geoportail/r/wms",
+				"name": "PROTECTEDAREAS.MNHN.CDL.PERIMETER",
+				"format": "image/png",
 				"srs": "epsg:2154"
 			  }
 			},
@@ -914,6 +915,30 @@
             "url": "https://geobretagne.fr/geoserver/sncf/wfs",
             "version": "2.0.0",
             "name": "sncf:ligne_ferroviaire",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Point d'arrêt BreizhGo",
+          "description": "Point d'arrêt logiques du réseau routier BreizhGo",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/dfd88250-3931-48ba-a77c-a218ae55e0f1",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+            "version": "2.0.0",
+            "name": "rb:arret_logique_reseau_breizhgo_car",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "Lignes routières du réseau BreizhGo",
+          "description": "Lignes routières du réseau BreizhGo",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b8927600-5b49-11de-b5dc-0000c0a8230c",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+            "version": "2.0.0",
+            "name": "rb:reseau_breizhgo_car",
             "srs": "epsg:2154"
           }
         }
