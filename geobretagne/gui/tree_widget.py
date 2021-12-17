@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from qgis.PyQt.QtWidgets import QTreeWidget, QAbstractItemView
+from qgis.PyQt.QtWidgets import QTreeWidget, QAbstractItemView, QMessageBox, QTreeWidgetItemIterator
 from qgis.PyQt.QtCore import Qt, QByteArray, QDataStream, QIODevice
 from qgis.core import Qgis, QgsMessageLog
 
@@ -10,7 +10,7 @@ from geobretagne.utils.plugin_globals import PluginGlobals
 
 class TreeWidget(QTreeWidget):
     """
-    The tree widget used in the Géo2France dock
+    The tree widget used in the dock
     """
 
     def __init__(self):
@@ -54,11 +54,67 @@ class TreeWidget(QTreeWidget):
 
         if resources_tree is None:
             QgsMessageLog.logMessage(u"Faute de fichier de configuration valide, aucune ressource ne peut être chargée "
-                                     u"dans le panneau de l'extension Géo2France.",
-                                     tag=u"Géo2France", level=Qgis.Warning)
+                                     u"dans le panneau.", level=Qgis.Warning)
         elif resources_tree.children is not None and len(resources_tree.children) > 0:
             for child in resources_tree.children:
                 create_subitem(child, self)
+
+                
+    def show_parents(self, item):
+        # check if item has parent
+        if item.parent():
+            # show parent
+            parent = item.parent()
+            parent.setHidden(False)
+            # next parent of parent
+            self.show_parents(parent)
+
+    def show_children(self, item):
+        # check if item has children
+        if item.childCount() > 0:
+            # show all children
+            for child_index in range(0, item.childCount()):
+                child = item.child(child_index)
+                child.setHidden(False)
+                # next children of children
+                self.show_children(child)
+            
+    def filter_by_text(self, searchtext):
+        # no text filter
+        if searchtext == '':
+            # folds all folders
+            self.collapseAll()
+            # show all items
+            it = QTreeWidgetItemIterator(self)
+            while it.value():
+                item = it.value()
+                item.setHidden(False)
+                it += 1
+                 # text filter
+
+        # if no filter is set, folds all items
+        else:
+            # hide all items
+            it = QTreeWidgetItemIterator(self)
+            while it.value():
+                item = it.value()
+                item.setHidden(True)
+                it += 1
+            # iterate through all items
+            it = QTreeWidgetItemIterator(self)
+            while it.value():
+                item = it.value()
+                # if text is found in item
+                if searchtext.lower() in item.text(0).lower():
+                    # make this item visible
+                    item.setHidden(False)
+                    # make its parent visibles
+                    self.show_parents(item)
+                    # make its children visible
+                    self.show_children(item)
+                it += 1
+            # unfold all folders
+            self.expandAll()
 
     def update_visibility_of_tree_items(self):
         """
