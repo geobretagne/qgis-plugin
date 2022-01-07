@@ -8,7 +8,7 @@
       "type": "folder",
       "children": [{
           "title": "Scan IGN",
-          "description": "Scans de l'IGN (affichage du scan selon l'échelle)",
+          "description": "Scans de l'IGN (scan différent selon l'échelle)",
           "type": "wms_layer",
           "metadata_url": "http://www.ign.fr/",
           "params": {
@@ -20,7 +20,7 @@
         },
         {
           "title": "Orthophoto",
-          "description": "Orthophoto",
+          "description": "Orthophotographie aérienne",
 		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731",
           "type": "wms_layer",
           "params": {
@@ -32,7 +32,7 @@
         },
         {
           "title": "Orthophoto infrarouge",
-          "description": "Orthophoto infrarouge",
+          "description": "Orthophotographie infrarouge",
 		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/434b82a8-8d3c-4d9f-9eb3-0485f1a63eb6",
           "type": "wms_layer",
           "params": {
@@ -44,7 +44,7 @@
         },
         {
           "title": "Orthophoto ancienne",
-          "description": "Orthophoto des années 50",
+          "description": "Orthophotographie des années 50",
 		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/048622c5-b333-4c2b-94ec-40a41608dc06",
           "type": "wms_layer",
           "params": {
@@ -754,7 +754,7 @@
 			  }
 			},
 			{
-			  "title": "NATURA 2000 - Directive Habitats en Bretagne (ZSC)",
+			  "title": "NATURA 2000 - Directive Habitats (ZSC)",
 			  "description": "NATURA 2000 - Directive Habitats en Bretagne (ZSC)",
 			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/0b4fe074-5827-47c6-b00e-1c74613ba9cf",
 			  "type": "wfs_feature_type",
@@ -766,7 +766,7 @@
 			  }
 			},
 			{
-			  "title": "NATURA 2000 - Directive Oiseaux en Bretagne (ZPS)",
+			  "title": "NATURA 2000 - Directive Oiseaux (ZPS)",
 			  "description": "NATURA 2000 - Directive Oiseaux en Bretagne (ZPS)",
 			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ddd7da8e-8275-40db-ab39-b5a3178ab570",
 			  "type": "wfs_feature_type",
@@ -779,7 +779,7 @@
 			},
 			{
 			  "title": "Parcs naturels régionaux",
-			  "description": "Parcs naturels régionaux actifs et en projet de Bretagne",
+			  "description": "Parcs naturels régionaux (PNR) actifs et en projet de Bretagne",
 			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9df1d4b7-221c-4424-af3f-50a898e3d333",
 			  "type": "wfs_feature_type",
 			  "params": {
@@ -790,7 +790,7 @@
 			  }
 			},
 		    {
-			  "title": "Réserve Nationale de Chasse et de Faune Sauvage en Bretagne",
+			  "title": "Réserve Nationale de Chasse et de Faune Sauvage",
 			  "description": "Réserve Nationale de Chasse et de Faune Sauvage en Bretagne",
 			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ab992426-dc35-427c-9579-8293ca06a269",
 			  "type": "wms_layer",
@@ -815,7 +815,7 @@
 			},
 			{
 			  "title": "Réserves naturelles régionales",
-			  "description": " Réserves naturelles régionales de Bretagne",
+			  "description": " Réserves naturelles régionales (RNR) de Bretagne",
 			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51",
 			  "type": "wfs_feature_type",
 			  "params": {
@@ -826,7 +826,7 @@
 			  }
 			},
 			{
-			  "title": "Sites classés  en Bretagne",
+			  "title": "Sites classés",
 			  "description": "Sites classés  en Bretagne",
 			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ed5ad99c-a386-48c2-8f96-decdbb593643",
 			  "type": "wfs_feature_type",
@@ -838,7 +838,7 @@
 			  }
 			},
 		    {
-			  "title": "Sites inscrits en Bretagne",
+			  "title": "Sites inscrits",
 			  "description": "Sites inscrits en Bretagne",
 			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/31a41ed0-9945-41c1-bd68-df7ae572bba2",
 			  "type": "wfs_feature_type",

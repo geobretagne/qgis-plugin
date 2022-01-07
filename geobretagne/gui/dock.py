@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from qgis.PyQt.QtCore import Qt
-from qgis.PyQt.QtWidgets import QWidget, QDockWidget, QVBoxLayout
+from qgis.PyQt.QtWidgets import QWidget, QDockWidget, QVBoxLayout, QLineEdit
 
 from geobretagne.gui.tree_widget import TreeWidget
 
@@ -24,11 +24,16 @@ class DockWidget(QDockWidget):
         self.setWindowTitle(u'GéoBretagne')
         self.setAllowedAreas(Qt.LeftDockWidgetArea | Qt.RightDockWidgetArea)
 
+        # Search bar.
+        self.searchbar = QLineEdit()
+        self.searchbar.textChanged.connect(self.filter_by_text)
+
         self.treeWidget = TreeWidget()
 
         self.layout = QVBoxLayout()
         self.layout.setSpacing(2)
         self.layout.setMargin(0)
+        self.layout.addWidget(self.searchbar)
         self.layout.addWidget(self.treeWidget)
 
         self.dockWidgetContents = QWidget()
@@ -41,6 +46,13 @@ class DockWidget(QDockWidget):
         """
         self.treeWidget.set_tree_content(resources_tree)
         self.update_visibility_of_tree_items()
+
+    def filter_by_text(self, searchtext):
+        """
+        Filter the visibility of tree items
+        with search bar content
+        """
+        self.treeWidget.filter_by_text(searchtext)
 
     def update_visibility_of_tree_items(self):
         """
