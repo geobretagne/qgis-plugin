@@ -47,7 +47,7 @@ class PluginGlobals:
     CONFIG_FILES_DOWNLOAD_AT_STARTUP = True
     CONFIG_DIR_NAME = "config"
     CONFIG_FILE_NAMES = ["config.json"]
-    CONFIG_FILE_URLS = ["https://github.com/geobretagne/qgis-plugin/blob/master/geobretagne/config/config.json"]
+    CONFIG_FILE_URLS = ["https://geobretagne.fr/pub/qgis-plugin/config.json"]
 
     # Hide resources with status = warn
     HIDE_RESOURCES_WITH_WARN_STATUS = True
@@ -126,10 +126,10 @@ class PluginGlobals:
         s = QSettings()
         s.setValue(u"{0}/hide_resources_with_warn_status".format(self.PLUGIN_TAG), u"1")
         s.setValue(u"{0}/hide_empty_groups".format(self.PLUGIN_TAG), u"1")
-        s.setValue(u"{0}/config_files_download_at_startup".format(self.PLUGIN_TAG), u"1")#0
+        s.setValue(u"{0}/config_files_download_at_startup".format(self.PLUGIN_TAG), u"0")#0
         s.setValue(u"{0}/config_file_names".format(self.PLUGIN_TAG), ["config.json"])
         s.setValue(u"{0}/config_file_urls".format(self.PLUGIN_TAG),
-                   ["https://github.com/geobretagne/qgis-plugin/blob/master/geobretagne/config/config.json"])
+                   ["https://geobretagne.fr/pub/qgis-plugin/config.json"])
 
     def get_qgis_setting_default_value(self, setting):
         """
