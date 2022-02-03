@@ -442,9 +442,9 @@
 		  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=8b9bc237-0195-46f7-b92e-d923257e4b05",
           "type": "wfs_feature_type",
           "params": {
-            "url": "https://geobretagne.fr/geoserver/geor_loc/wfs",
+            "url": "https://geobretagne.fr/geoserver/ign/wfs",
             "version": "2.0.0",
-            "name": "geor_loc:REGION",
+            "name": "ign:region_metro",
             "srs": "epsg:2154"
           }
         },
@@ -466,9 +466,9 @@
 		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff",
           "type": "wfs_feature_type",
           "params": {
-            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "url": "https://geobretagne.fr/geoserver/ign/wfs",
             "version": "2.0.0",
-            "name": "dreal_b:EPCI_053",
+            "name": "ign:epci",
             "srs": "epsg:2154"
           }
         },
@@ -503,9 +503,9 @@
 		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5",
           "type": "wfs_feature_type",
           "params": {
-            "url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+            "url": "https://geobretagne.fr/geoserver/ign/wfs",
             "version": "2.0.0",
-            "name": "dreal_b:n_pays",
+            "name": "ign:pays",
             "srs": "epsg:2154"
           }
         }
