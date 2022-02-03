@@ -631,6 +631,97 @@
 	  ]
 	},
     {
+      "title": "Agriculture",
+      "description": "Agriculture",
+      "type": "folder",
+      "children": [
+		{
+          "title": "RPG 2020",
+          "description": "Registre parcellaire graphique 2020",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/rpg",
+          "params": {
+            "url": "https://wxs.ign.fr/agriculture/geoportail/r/wms",
+            "name": "LANDUSE.AGRICULTURE2020",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "RPG 2019",
+          "description": "Registre parcellaire graphique 2019",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/rpg",
+          "params": {
+            "url": "https://wxs.ign.fr/agriculture/geoportail/r/wms",
+            "name": "LANDUSE.AGRICULTURE2019",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "RPG 2018",
+          "description": "Registre parcellaire graphique 2018",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/rpg",
+          "params": {
+            "url": "https://wxs.ign.fr/agriculture/geoportail/r/wms",
+            "name": "LANDUSE.AGRICULTURE2018",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "RPG 2017",
+          "description": "Registre parcellaire graphique 2017",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/rpg",
+          "params": {
+            "url": "https://wxs.ign.fr/agriculture/geoportail/r/wms",
+            "name": "LANDUSE.AGRICULTURE2017",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "RPG 2016",
+          "description": "Registre parcellaire graphique 2016",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/rpg",
+          "params": {
+            "url": "https://wxs.ign.fr/agriculture/geoportail/r/wms",
+            "name": "LANDUSE.AGRICULTURE2016",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "RPG 2015",
+          "description": "Registre parcellaire graphique 2015",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/rpg",
+          "params": {
+            "url": "https://wxs.ign.fr/agriculture/geoportail/r/wms",
+            "name": "LANDUSE.AGRICULTURE2015",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+          "title": "RPG 2014",
+          "description": "Registre parcellaire graphique 2014",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/rpg",
+          "params": {
+            "url": "https://wxs.ign.fr/agriculture/geoportail/r/wms",
+            "name": "LANDUSE.AGRICULTURE2014",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        }
+      ]
+    },
+    {
       "title": "Environnement",
       "description": "Données concernant la thématique environnement",
       "type": "folder",
