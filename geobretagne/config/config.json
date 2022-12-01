@@ -166,6 +166,19 @@
 			  }
 			},
 			{
+			  "title": "Côtes d'Armor 2021",
+			  "description": "Ortho Côtes d'Armor 2021",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3f7c0097-73ba-4601-b2f4-1281fb26e5be",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-22-2021",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
 			  "title": "Finistère 2012",
 			  "description": "Ortho Finistère 2012",
 			  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=728cb2e8-d970-4f37-bb5f-0407b71b16a9",
@@ -200,6 +213,19 @@
 				"url": "https://geobretagne.fr/geoserver/photo/wms",
 				"version": "2.0.0",
 				"name": "ortho-29-2018",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Finistère 2021",
+			  "description": "Ortho Finistère 2021",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/8ca51154-4d03-4d02-be0e-e725b5bfa584",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/photo/wms",
+				"version": "2.0.0",
+				"name": "ortho-29-2021",
 				"format": "image/png",
 				"srs": "epsg:2154"
 			  }
