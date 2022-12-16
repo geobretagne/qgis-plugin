@@ -338,8 +338,26 @@
         }
 		]
 	},
-
     {
+      "title": "Adresse",
+      "description": "Données concernant les adresses en Bretagne",
+      "type": "folder",
+      "children": [
+		{
+          "title": "Base adresse nationale",
+          "description": "Base adresse nationale export Bretagne",
+		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f746054b-bfab-4cd8-a30a-b102a5477317",	  
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/geobretagne/wms",
+            "name": "ban",
+            "format": "image/png",
+            "srs": "epsg:2154"			
+          }
+        }
+	  ]
+	},    {
       "title": "Altimétrie",
       "description": "Données concernant l'altimétrie",
       "type": "folder",
@@ -496,7 +514,18 @@
             "name": "parcelle_personne_morale",
             "srs": "EPSG:2154"
           }
-        }
+        },
+        {
+          "title": "Documents modificatifs du parcellaire cadastral",
+          "description": "Documents modificatifs du parcellaire cadastral (DPMC) - GéoFoncier",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://api2.geofoncier.fr/api/referentielsoge/wxs?",
+            "format": "image/png",
+            "name": "DOC_CAD_ANCIENS_DMPC",
+            "srs": "EPSG:2154"
+          }
+        }		
 	  ]
 	},
     {
@@ -1098,157 +1127,6 @@
       "description": "Données concernant la thématique environnement",
       "type": "folder",
       "children": [
-	  {
-			"title": "Plan climat air énergie territorial (PCAET)",
-			"description": "Le linéaire des haies bocagères est constitué de haies et de talus nus ou boisés localisés dans l'espace agricole breton",
-			"metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9e9d9439-4917-4dd3-8ab6-90ad1aebc3ca",
-			"type": "wms_layer",
-			"params": {
-			"url": "https://geobretagne.fr/geoserver/dreal_b/wms",
-			"format": "image/png",			
-			"name": "l_pcaet",
-			"srs": "epsg:2154"
-			  }
-	  }, 
-	  {
-          "title": "Bocage",
-          "description": "Données concernant la thématique bocage",
-          "type": "folder",
-          "children": [{
-			"title": "Structures porteuses du programme Breizh bocage",
-			"description": "Structures porteuses du programme Breizh bocage",
-			"metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/aa9ca710-597c-4871-906f-ac209937d8e7",
-			"type": "wms_layer",
-			"params": {
-			"url": "https://ows.region-bretagne.fr/geoserver/rb/wms",
-			"format": "image/png",
-			"name": "breizh_bocage_strategie_contact",
-			"srs": "epsg:2154"
-			  }
-			},
-			{
-			"title": "Référentiel bocager de Bretagne (haies)",
-			"description": "Le linéaire des haies bocagères est constitué de haies et de talus nus ou boisés localisés dans l'espace agricole breton",
-			"metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a41663ba-250f-44f4-825b-bc75593f1021",
-			"type": "wms_layer",
-			"params": {
-			"url": "https://geobretagne.fr/geoserver/ign/wms",
-			"format": "image/png",
-			"name": "referentiel_bocager_regional",
-			"srs": "epsg:2154"
-			  }
-			}			
-		]
-		},
-		{
-          "title": "Eau",
-          "description": "Données concernant la thématique eau",
-          "type": "folder",
-          "children": [{
-			  "title": "SAGE",
-			  "description": "Schémas d'aménagement et de gestion des eaux (SAGE) en Bretagne",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/e718b2fe-f3d0-4c56-a0c0-bf61d31a857b",
-			  "type": "wfs_feature_type",
-			  "params": {
-				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
-				"version": "2.0.0",
-				"name": "dreal_b:sage_dreal",
-				"srs": "epsg:2154"
-			  }
-			},
-			{
-			  "title": "Bassin versant",
-			  "description": "Bassin versant en Bretagne",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a06c4da-2e8a-4a3b-b0f9-68ac4d2351ca",
-			  "type": "wfs_feature_type",
-			  "params": {
-				"url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
-				"version": "2.0.0",
-				"name": "rb:bassin_versant",
-				"srs": "epsg:2154"
-			  }
-			},
-		{
-          "title": "BD TOPAGE",
-          "description": "BD Topage",
-          "type": "folder",
-          "children": [
-		    {
-			  "title": "Cours d'eau",
-			  "description": "Cours d'eau - Métropole 2019 - BD Topage",
-			  "type": "wms_layer",
-			  "metadata_url": "http://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/3b3d3c56-d9b6-4625-a57e-ba054e798274",
-			  "params": {
-				"url": "https://services.sandre.eaufrance.fr/geo/topage?",
-				"name": "CoursEau_FXX",
-				"format": "image/png",
-				"srs": "epsg:2154"
-			  }
-            },
-            {
-			  "title": "Tronçons hydrographiques",
-			  "description": "Tronçons hydrographiques - Métropole 2019 - BD Topage",
-			  "type": "wms_layer",
-			  "metadata_url": "http://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/a535c474-eca0-4295-880e-a95c8e633a51",
-			  "params": {
-				"url": "https://services.sandre.eaufrance.fr/geo/topage?",
-				"name": "TronconHydrographique_FXX",
-				"format": "image/png",
-				"srs": "epsg:2154"
-			  }
-            },
-			{
-			  "title": "Plans d'eau",
-			  "description": "Plans d'eau - Métropole 2019 - BD Topage",
-			  "type": "wms_layer",
-			  "metadata_url": "http://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/1badb229-d364-4991-9c48-42a272d0eb9b",
-			  "params": {
-				"url": "https://services.sandre.eaufrance.fr/geo/topage?",
-				"name": "PlanEau_FXX",
-				"format": "image/png",
-				"srs": "epsg:2154"
-			  }
-            },
-			{
-			  "title": "Bassins versant topographiques",
-			  "description": "Bassins versant topographiques - Métropole 2019 - BD Topage",
-			  "type": "wms_layer",
-			  "metadata_url": "http://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/6571f89a-0608-49a2-9ab5-f005d842e81f",
-			  "params": {
-				"url": "https://services.sandre.eaufrance.fr/geo/topage?",
-				"name": "BassinVersantTopographique_FXX",
-				"format": "image/png",
-				"srs": "epsg:2154"
-			  }
-            },
-			{
-			  "title": "Limites terre-mer",
-			  "description": "Limites terre-mer - Métropole 2019 - BD Topage",
-			  "type": "wms_layer",
-			  "metadata_url": "http://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/81d6c79e-92e9-46e3-aa8b-1001f91c20dc",
-			  "params": {
-				"url": "https://services.sandre.eaufrance.fr/geo/topage?",
-				"name": "LimiteTerreMer_FXX",
-				"format": "image/png",
-				"srs": "epsg:2154"
-			  }
-            },
-			{
-			  "title": "Nœuds hydrographiques",
-			  "description": "Nœuds hydrographiques - Métropole 2019 - BD Topage",
-			  "type": "wms_layer",
-			  "metadata_url": "http://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/1fcad63b-23f3-4d16-b5de-e25745f66880",
-			  "params": {
-				"url": "https://services.sandre.eaufrance.fr/geo/topage?",
-				"name": "NoeudHydrographique_FXX",
-				"format": "image/png",
-				"srs": "epsg:2154"
-			  }
-            }			
-			]
-			}		
-			]
-		},
 		{
           "title": "Espaces protégés",
           "description": "Données concernant la thématique des espaces protégés",
@@ -1471,7 +1349,95 @@
 			  }
 			}
 			]
-		}
+		},
+		{
+          "title": "Eau",
+          "description": "Données concernant la thématique eau",
+          "type": "folder",
+          "children": [{
+			  "title": "SAGE",
+			  "description": "Schémas d'aménagement et de gestion des eaux (SAGE) en Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/e718b2fe-f3d0-4c56-a0c0-bf61d31a857b",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://geobretagne.fr/geoserver/dreal_b/wfs",
+				"version": "2.0.0",
+				"name": "dreal_b:sage_dreal",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Bassin versant",
+			  "description": "Bassin versant en Bretagne",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a06c4da-2e8a-4a3b-b0f9-68ac4d2351ca",
+			  "type": "wfs_feature_type",
+			  "params": {
+				"url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
+				"version": "2.0.0",
+				"name": "rb:bassin_versant",
+				"srs": "epsg:2154"
+			  }
+			}
+		]
+		},	
+		{
+          "title": "Végétation",
+          "description": "Données concernant la thématique végétation",
+          "type": "folder",
+          "children": [{
+			  "title": "Côtes d'Armor",
+			  "description": "Carte des grands types de végétation par télédétection des Côtes d'Armor",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/6dcbe815-2ed1-42fa-8391-3f40b6d0565e",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://www.cbnbrest.fr/geoserver/wms",
+				"version": "2.0.0",
+				"name": "teledetection:all22",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Finistère",
+			  "description": "Carte des grands types de végétation par télédétection du Finistère",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/0ab03069-773f-4f46-9ec1-40a7fe7c9075",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://www.cbnbrest.fr/geoserver/wms",
+				"version": "2.0.0",
+				"name": "teledetection:all29",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Ille-et-Vilaine",
+			  "description": "Carte des grands types de végétation par télédétection d'Ille-et-Vilaine",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/b4a681bc-5a27-42af-a38c-7500426aa500",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://www.cbnbrest.fr/geoserver/wms",
+				"version": "2.0.0",
+				"name": "teledetection:all35",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			},
+			{
+			  "title": "Morbihan",
+			  "description": "Carte des grands types de végétation par télédétection du Morbihan",
+			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/25b9e0ce-7a04-4141-9299-4e87e52cb0fe",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://www.cbnbrest.fr/geoserver/wms",
+				"version": "2.0.0",
+				"name": "teledetection:all56",
+				"format": "image/png",
+				"srs": "epsg:2154"
+			  }
+			}
+			]
+		}		
       ]
     },
     {
