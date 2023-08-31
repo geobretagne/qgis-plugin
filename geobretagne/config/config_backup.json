@@ -1564,42 +1564,11 @@
             "version": "2.0.0",
             "name": "sncf:ligne_ferroviaire",
             "srs": "epsg:2154"
-          }
-        }
-		]
-		}
-		,
-		{
-          "title": "Réseau interurbain",
-          "description": "Données concernant le réseau interurbain",
-          "type": "folder",
-          "children": [
-		  {	 
-          "title": "Point d'arrêt BreizhGo",
-          "description": "Point d'arrêt logiques du réseau routier BreizhGo",
-		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/dfd88250-3931-48ba-a77c-a218ae55e0f1",
-          "type": "wfs_feature_type",
-          "params": {
-            "url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
-            "version": "2.0.0",
-            "name": "rb:arret_logique_reseau_breizhgo_car",
-            "srs": "epsg:2154"
-          }
-        },
-		{
-          "title": "Lignes routières du réseau BreizhGo",
-          "description": "Lignes routières du réseau BreizhGo",
-		  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b8927600-5b49-11de-b5dc-0000c0a8230c",
-          "type": "wfs_feature_type",
-          "params": {
-            "url": "https://ows.region-bretagne.fr/geoserver/rb/wfs",
-            "version": "2.0.0",
-            "name": "rb:reseau_breizhgo_car",
-            "srs": "epsg:2154"
-          }
-        }
-		]
-		}]
+                    }
+                }
+	      ]
+	    }
+	  ]
 	}	
   ]
 }
