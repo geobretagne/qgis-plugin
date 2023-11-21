@@ -58,8 +58,8 @@
           }
 		},
         {
-          "title": "Orthophoto ancienne 1950-1965 IGN France",
-          "description": "Orthophotographie des années 1950-1965",
+          "title": "Orthophoto ancienne 2000-2005 IGN France",
+          "description": "Orthophotographie des années 2000-2005",
 		  "metadata_url": "https://geoservices.ign.fr/services-web-experts-orthohisto",
           "type": "wms_layer",
 		  "params": {
