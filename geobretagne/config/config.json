@@ -104,51 +104,12 @@
         {
           "ident": "60d32222-59e7-45cd-ad84-aaa911374b40",
           "title": "OpenStreetMap - OSM style Google",
-          "description": "Fond de plan OpenStreetMap fourni par DataGrandEst avec un style inspiré de la cartographie Google Maps",
-          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "description": "Fond de plan OpenStreetMap fourni par GéoBretagne avec un style inspiré de la cartographie Google Maps",
+          "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6d5e8af2-070e-45ab-96c0-fe7938a5d853",
           "type": "wms_layer",
           "params": {
-            "url": "https://osm.datagrandest.fr/mapcache",
-            "name": "osm_google",
-            "format": "image/png",
-            "srs": "EPSG:2154"
-          }
-        },
-        {
-          "ident": "6625a2cb-ceba-4e51-8955-d9f535b973e3",
-          "title": "OpenStreetMap - OSM style Relief",
-          "description": "Fond de carte OpenStreetMap fourni par DataGrandEst contenant une représentation du relief",
-          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
-          "type": "wms_layer",
-          "params": {
-            "url": "https://osm.datagrandest.fr/mapcache",
-            "name": "relief",
-            "format": "image/png",
-            "srs": "EPSG:2154"
-          }
-        },
-        {
-          "ident": "d80b1551-b1ec-43d5-9e1f-49f6afa946fa",
-          "title": "OpenStreetMap - OSM style Naturaliste",
-          "description": "Fond de carte OpenStreetMap fourni par DataGrandEst avec un carroyage et les lignes à haute tension",
-          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
-          "type": "wms_layer",
-          "params": {
-            "url": "https://osm.datagrandest.fr/mapcache",
-            "name": "naturaliste",
-            "format": "image/png",
-            "srs": "EPSG:2154"
-          }
-        },
-        {
-          "ident": "5bff9e08-c7bd-43b4-acaf-555bd6d19e63",
-          "title": "OpenStreetMap - OSM style Désaturé",
-          "description": "Fond de carte OpenStreetMap fourni par DataGrandEst proposant une teinte neutre",
-          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
-          "type": "wms_layer",
-          "params": {
-            "url": "https://osm.datagrandest.fr/mapcache",
-            "name": "faded",
+            "url": "https://tile.geobretagne.fr/osm/service",
+            "name": "osm:google",
             "format": "image/png",
             "srs": "EPSG:2154"
           }
@@ -156,38 +117,77 @@
         {
           "ident": "20e4b622-f138-4b87-93a3-88f13224a93a",
           "title": "OpenStreetMap - OSM style Noir et blanc",
-          "description": "Fond de carte OpenStreetMap fourni par DataGrandEst entièrement composé de nuances de gris",
-          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "description": "Fond de carte OpenStreetMap fourni par GéoBretagne à partir de DataGrandEst entièrement composé de nuances de gris",
+          "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/0a519082-b269-4cdf-acff-bd301041d5ea",
           "type": "wms_layer",
           "params": {
-            "url": "https://osm.datagrandest.fr/mapcache",
-            "name": "grey",
+            "url": "https://tile.geobretagne.fr/osm/service",
+            "name": "osm:grey",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "ident": "5bff9e08-c7bd-43b4-acaf-555bd6d19e63",
+          "title": "OpenStreetMap - OSM style Désaturé",
+          "description": "Fond de carte OpenStreetMap fourni par GéoBretagne proposant une teinte neutre",
+          "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ab85ec34-e73e-4d91-b329-02f392a9a1aa",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://tile.geobretagne.fr/osm/service",
+            "name": "osm:faded",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "ident": "d80b1551-b1ec-43d5-9e1f-49f6afa946fa",
+          "title": "OpenStreetMap - OSM style Naturaliste",
+          "description": "Fond de carte OpenStreetMap fourni par GéoBretagne à partir de DataGrandEst avec un style naturaliste",
+          "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7cdccb07-a132-4f2b-82c5-7908af2c87c2",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://tile.geobretagne.fr/osm/service",
+            "name": "osm:naturaliste",
             "format": "image/png",
             "srs": "EPSG:2154"
           }
         },
         {
           "ident": "4afd5426-17cf-40a2-b4b5-44d1051db21d",
-          "title": "OpenStreetMap - OSM style Sans toponymes",
-          "description": "Fond de carte OpenStreetMap fourni par DataGrandEst ne comportant aucune étiquette ou élément textuel",
-          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "title": "OpenStreetMap - OSM style defaut",
+          "description": "Fond de carte OpenStreetMap fourni par GéoBretagne avec un style simple",
+          "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b9db6b2-8dec-4aa2-abef-8f627267cc64",
           "type": "wms_layer",
           "params": {
-            "url": "https://osm.datagrandest.fr/mapcache",
-            "name": "pure",
+            "url": "https://tile.geobretagne.fr/osm/service",
+            "name": "osm:default",
             "format": "image/png",
             "srs": "EPSG:2154"
           }
         },
         {
-          "ident": "0632365f-522d-446e-9b4c-afafb1ad7f7f",
-          "title": "OpenStreetMap - OSM style Toponymes seuls",
-          "description": "Fond de carte OpenStreetMap fourni par DataGrandEst ne comportant que des éléments textuels et des éléments linéaires à superposer à d'autres fonds topographiques",
-          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "ident": "4afd5426-17cf-40a2-b4b5-44d1051db21d",
+          "title": "OpenStreetMap - OSM style bing",
+          "description": "Fond de plan OpenStreetMap fourni par GéoBretagne avec un style inspiré de la cartographie Bing",
+          "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/cd931771-fb8f-46d8-bd73-8f7fbbd356d8GE-OSM",
           "type": "wms_layer",
           "params": {
-            "url": "https://osm.datagrandest.fr/mapcache",
-            "name": "overlay",
+            "url": "https://tile.geobretagne.fr/osm/service",
+            "name": "osm:bing",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "ident": "4afd5426-17cf-40a2-b4b5-44d1051db21d",
+          "title": "OpenStreetMap - OSM style roads",
+          "description": "Fond de carte OpenStreetMap fourni par GéoBretagne transparent affichant les routes",
+          "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3303a14b-44af-4950-b067-f43ddc0f483f",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://tile.geobretagne.fr/osm/service",
+            "name": "osm:roads",
             "format": "image/png",
             "srs": "EPSG:2154"
           }
