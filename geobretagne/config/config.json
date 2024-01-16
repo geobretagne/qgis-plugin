@@ -37,7 +37,7 @@
 			  "metadata_url": "https://geoservices.ign.fr/services-web-essentiels",
 			  "type": "wms_layer",
 			  "params": {
-				"url": "https://wxs.ign.fr/essentiels/geoportail/r/wms?tiled=true",
+				"url": "https://wxs.ign.fr/ortho/geoportail/r/wms?tiled=true",
 				"version": "2.0.0",
 				"name": "ORTHOIMAGERY.ORTHOPHOTOS.IRC",
 				"format": "image/png",
