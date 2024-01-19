@@ -31,6 +31,19 @@
 				"srs": "EPSG:2154"
 			  }
 		},
+		{
+			  "title": "Orthophoto PCRS",
+			  "description": "Orthophotographie aérienne publiée par l'IGN",
+			  "metadata_url": "https://geoservices.ign.fr/pcrs",
+			  "type": "wms_layer",
+			  "params": {
+				"url": "https://wxs.ign.fr/ortho/geoportail/r/wms?tiled=true",
+				"version": "2.0.0",
+				"name": "PCRS.LAMB93",
+				"format": "image/png",
+				"srs": "EPSG:2154"
+			  }
+		},	      
         {
           "title": "Orthophoto infrarouge IGN France",
           "description": "Orthophotographie infrarouge publiée par l'IGN",
