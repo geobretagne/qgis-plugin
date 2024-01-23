@@ -619,6 +619,30 @@
       "type": "folder",
       "children": [
 		{
+          "title": "RPG 2022",
+          "description": "Registre parcellaire graphique 2022",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/rpg",
+          "params": {
+            "url": "https://wxs.ign.fr/agriculture/geoportail/r/wms",
+            "name": "LANDUSE.AGRICULTURE2022",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+	      {
+          "title": "RPG 2021",
+          "description": "Registre parcellaire graphique 2020",
+          "type": "wms_layer",
+		  "metadata_url": "https://geoservices.ign.fr/rpg",
+          "params": {
+            "url": "https://wxs.ign.fr/agriculture/geoportail/r/wms",
+            "name": "LANDUSE.AGRICULTURE2021",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+	      {
           "title": "RPG 2020",
           "description": "Registre parcellaire graphique 2020",
           "type": "wms_layer",
