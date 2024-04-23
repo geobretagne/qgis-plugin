@@ -408,7 +408,7 @@
       "children": [{
           "title": "Régions",
           "description": "Limites des régions basées sur la BD Admin Express de l'IGN",
-		  "metadata_url": "https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=8b9bc237-0195-46f7-b92e-d923257e4b05",
+		  "metadata_url": "https://geobretagne.fr/datahub/dataset/8b9bc237-0195-46f7-b92e-d923257e4b05",
           "type": "wfs_feature_type",
           "params": {
             "url": "https://geobretagne.fr/geoserver/ign/wfs",
@@ -852,7 +852,7 @@
 			  "children": [		  
 			  {	"title": "Lignes aériennes BT - Enedis",
 			  "description": "Lignes aériennes BT - Enedis",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/6df302c1-601a-4b69-805f-f4f6ca666dfc",
+			  "metadata_url": "https://geobretagne.fr/datahub/dataset/6df302c1-601a-4b69-805f-f4f6ca666dfc",
 				"type": "wms_layer",
 				"params": {
 				"url": "https://geobretagne.fr/geoserver/enedis/wms",
@@ -863,7 +863,7 @@
 				},
 			{	"title": "Lignes aériennes HTA - Enedis",
 			  "description": "Lignes aériennes HTA - Enedis",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/ef25cd6f-385f-4844-a0a0-de0ac20808d6",
+			  "metadata_url": "https://geobretagne.fr/datahub/dataset/ef25cd6f-385f-4844-a0a0-de0ac20808d6",
 				"type": "wms_layer",
 				"params": {
 				"url": "https://geobretagne.fr/geoserver/enedis/wms",
@@ -891,7 +891,7 @@
 			  "children": [		  
 			  {	"title": "Lignes souterraines BT - Enedis",
 			  "description": "Lignes souterraines BT - Enedis",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/e9421773-f439-4354-b873-834f104e6a5e",
+			  "metadata_url": "https://geobretagne.fr/datahub/dataset/e9421773-f439-4354-b873-834f104e6a5e",
 				"type": "wms_layer",
 				"params": {
 				"url": "https://geobretagne.fr/geoserver/enedis/wms",
@@ -902,7 +902,7 @@
 				},
 			{	"title": "Lignes souterraines HTA - Enedis",
 			  "description": "Lignes souterraines HTA - Enedis",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/e24949f4-49c5-43c5-a85a-172f1cb4c5bd",
+			  "metadata_url": "https://geobretagne.fr/datahub/dataset/e24949f4-49c5-43c5-a85a-172f1cb4c5bd",
 				"type": "wms_layer",
 				"params": {
 				"url": "https://geobretagne.fr/geoserver/enedis/wms",
@@ -930,7 +930,7 @@
 			  "children": [		  
 			  {	"title": "Postes de distribution publique (postes HTA/BT) - Enedis",
 			  "description": "Postes de distribution publique (postes HTA/BT) - Enedis",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/f176e9dc-cc00-41bd-a123-7638d8bba15a",
+			  "metadata_url": "https://geobretagne.fr/datahub/dataset/f176e9dc-cc00-41bd-a123-7638d8bba15a",
 				"type": "wms_layer",
 				"params": {
 				"url": "https://geobretagne.fr/geoserver/enedis/wms",
@@ -941,7 +941,7 @@
 				},
 			{	"title": "Postes source et postes de répartition HTA/HTA - Enedis",
 			  "description": "Postes source et postes de répartition HTA/HTA - Enedis",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/3b76d1de-3c49-479c-9f20-2d2d6164e62a",
+			  "metadata_url": "https://geobretagne.fr/datahub/dataset/3b76d1de-3c49-479c-9f20-2d2d6164e62a",
 				"type": "wms_layer",
 				"params": {
 				"url": "https://geobretagne.fr/geoserver/enedis/wms",
@@ -952,7 +952,7 @@
 				},
 			{	"title": "Poteaux électriques HTA ou BT - Enedis",
 			  "description": "Poteaux électriques HTA ou BT - Enedis",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/6c429f24-0654-49cb-a5dc-6754982bcd97",
+			  "metadata_url": "https://geobretagne.fr/datahub/dataset/6c429f24-0654-49cb-a5dc-6754982bcd97",
 				"type": "wms_layer",
 				"params": {
 				"url": "https://geobretagne.fr/geoserver/enedis/wms",
@@ -1314,7 +1314,7 @@
           "children": [{
 			  "title": "Côtes d'Armor",
 			  "description": "Carte des grands types de végétation par télédétection des Côtes d'Armor",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/6dcbe815-2ed1-42fa-8391-3f40b6d0565e",
+			  "metadata_url": "https://geobretagne.fr/datahub/dataset/6dcbe815-2ed1-42fa-8391-3f40b6d0565e",
 			  "type": "wms_layer",
 			  "params": {
 				"url": "https://www.cbnbrest.fr/geoserver/wms",
@@ -1327,7 +1327,7 @@
 			{
 			  "title": "Finistère",
 			  "description": "Carte des grands types de végétation par télédétection du Finistère",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/0ab03069-773f-4f46-9ec1-40a7fe7c9075",
+			  "metadata_url": "https://geobretagne.fr/datahub/dataset/0ab03069-773f-4f46-9ec1-40a7fe7c9075",
 			  "type": "wms_layer",
 			  "params": {
 				"url": "https://www.cbnbrest.fr/geoserver/wms",
@@ -1340,7 +1340,7 @@
 			{
 			  "title": "Ille-et-Vilaine",
 			  "description": "Carte des grands types de végétation par télédétection d'Ille-et-Vilaine",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/b4a681bc-5a27-42af-a38c-7500426aa500",
+			  "metadata_url": "https://geobretagne.fr/datahub/dataset/b4a681bc-5a27-42af-a38c-7500426aa500",
 			  "type": "wms_layer",
 			  "params": {
 				"url": "https://www.cbnbrest.fr/geoserver/wms",
@@ -1353,7 +1353,7 @@
 			{
 			  "title": "Morbihan",
 			  "description": "Carte des grands types de végétation par télédétection du Morbihan",
-			  "metadata_url": "https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/25b9e0ce-7a04-4141-9299-4e87e52cb0fe",
+			  "metadata_url": "https://geobretagne.fr/datahub/dataset/25b9e0ce-7a04-4141-9299-4e87e52cb0fe",
 			  "type": "wms_layer",
 			  "params": {
 				"url": "https://www.cbnbrest.fr/geoserver/wms",
