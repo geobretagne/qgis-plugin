@@ -220,14 +220,12 @@
           "description": "Base adresse nationale export Bretagne",
 		  "metadata_url": "https://geobretagne.fr/datahub/dataset/f746054b-bfab-4cd8-a30a-b102a5477317",	  
           "type": "wms_layer",
-		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
           "params": {
-            "url": "https://geobretagne.fr/geoserver/geobretagne/wms",
+            "url": "https://geobretagne.fr/geoserver/opendata/wms",
             "name": "ban",
             "format": "image/png",
             "srs": "epsg:2154"			
           }
-        }
 	  ]
 	},
     {
