@@ -20,7 +20,6 @@ class PluginIcons():
         """
 
         # Folder icon
-        QgsApplication.initQgis()
         style = QgsApplication.style()
         self.folder_icon = style.standardIcon(QStyle.SP_DirClosedIcon)
 
