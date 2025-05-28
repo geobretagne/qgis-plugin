@@ -524,6 +524,33 @@
           }
         },
         {
+          "title": "Modèle d'occupation du sol",
+          "description": "MOS breton",
+		  "metadata_url": "https://geobretagne.fr/datahub/dataset/b783e48b-c811-4504-900a-4b3d8e49888e",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://geobretagne.fr/geoserver/geobretagne/wms",
+            "format": "image/png",
+            "name": "mos_foncier",
+            "srs": "epsg:2154"
+            },
+            "children": [{
+                "title": "Etat en 2021",
+                "type": "wms_layer_style",
+                "params": {
+                  "name": "mos_2021"
+                }
+              },
+              {
+                "title": "Etat en 2011",
+                "type": "wms_layer_style",
+                "params": {
+                  "name": "mos_2011"
+                }
+              }
+            ]
+        },
+        {
             "title": "OCS Morbihan 2013",
           "description": "OCS Morbihan 2013",
 		  "metadata_url": "https://geobretagne.fr/datahub/dataset/16f61c29-160b-4406-8c49-a89de2eb47d4",
